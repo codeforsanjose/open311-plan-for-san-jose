@@ -5,11 +5,7 @@ CitySourced<- read.delim("~/Github/open311-plan-for-san-jose/2015-10-14-21-49-38
            header=T)
 str(CitySourced)
 summary(CitySourced)
-str()
 count(CitySourced$RequestType)
-str(CitySourced)
-
-summary(CitySourced)
 
 CitySourced$Description
 summary(CitySourced$DeviceType)
@@ -17,12 +13,10 @@ summary(CitySourced$HasBeenForwarded)
 summary(CitySourced$InitialBoundaryName)
 summary(CitySourced$Latitude)
 summary(CitySourced$Longitude)
-plot(CitySourced$Longitude)
+#plot(CitySourced$Longitude)
 
-str(CitySourced$DeviceType)
 count(CitySourced$DeviceModel)
-#write.csv(CitySourced, file = "San_Jose_Citysourced", sep = ',')
-getwd()
+#write.csv(CitySourced, file = "San_Jose_Citysourced.csv", sep = ',')
 
 str(CitySourced)
 CitySourced$DateCreated<- as.character(CitySourced$DateCreated)
