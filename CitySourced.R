@@ -1,5 +1,6 @@
 #Started by Vivek
 #Oct 16, 2015
+#Explore the CitySourced Data!
 
 CitySourced<- read.delim("~/Github/open311-plan-for-san-jose/2015-10-14-21-49-388.csv",sep="|", skip=0, check.names=FALSE,quote = "",
            header=T)
@@ -52,3 +53,5 @@ OtherIssues$Description
 InformationOnly[225,]
 
 OtherIssues[323,]
+
+OtherIssues$Description[19]
